@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: url("./images/netflix10.jpg") no-repeat center center fixed;
+            background-size: cover;
+            overflow:auto;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60vh;
+            background-color: rgba(0, 0, 0, 0.705);
+            z-index: 1;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+        }
+        .brand-title {
+            font-weight: bold;
+            color: rgb(215,4,4);
+            text-shadow: 1px 1px 2px white;
+            font-size: 40px; 
+        }
+        .language-container {
+            display: flex;
+            align-items: center;
+        }
+        .language {
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0.5);
+            border: 5px solid white;
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+        .language .bi {
+            margin-right: 5px;
+        }
+        .btn-signin {
+            font-size: 16px;
+            padding: 5px 10px;
+            width:60px;
+            display: flex;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 50px;
+        }
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+        .main-title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .main-subtitle {
+            font-size: 25px;
+        }
+        .form {
+            margin-top: 20px;
+        }
+        .form-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .email {
+            display: inline-block;
+            width: 300px;
+            padding: 15px;
+            border: 1px solid gray;
+            background-color: rgba(0,0,0,0.5);
+            margin-right: 1px;
+            text-align: left;
+        }
+        .btn-start {
+            width: 200px;
+            padding: 15px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        footer {
+            background-color: rgba(0,0,0,0.4);
+            color: white;
+            padding: 30px;
+            background-color: black;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        .row-1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .row-2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 20px;
+        }
+        .row-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+        } 
+        .netflix{
+            padding: top 10px;;
+        }
+        .col span {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <span class="brand-title">NETFLIX</span>
+        <div class="language-container">
+            <span class="language">
+                <span class="bi bi-translate"></span>
+                <span>English</span>
+                <span class="bi bi-chevron-down"></span>
+            </span>
+            <a href="#" class="btn-signin">SIGN IN</a>
+        </div>
+    </header>
+    <main>
+        <div class="main-title">Unlimited movies, TV shows and more</div>
+        <div class="main-subtitle">Watch anywhere. Cancel anytime.</div>
+        <div class="form">
+            <div class="form-title">Ready to watch? Enter your email to create or restart your membership.</div>
+            <div>
+                <span class="email">Email Address</span>
+                <span class="btn-start">
+                    <span>Get Started</span>
+                    <span class="bi bi-chevron-right"></span>
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row-1">
+            <address>
+                <span>Questions? Call 000-800-919-1694</span>
+            </address>
+        </div>
+        <div class="row-2">
+            <div class="col">
+                <span>FAQ</span>
+                <span>Investor Relations</span>
+                <span>Privacy</span>
+                <span>Speed Test</span>
+            </div>
+            <div class="col">
+                <span>Help Center</span>
+                <span>Jobs</span>
+                <span>Cookie Preferences</span>
+                <span>Legal Notices</span>
+            </div>
+            <div class="col">
+                <span>Account</span>
+                <span>Ways to Watch</span>
+                <span>Corporate Information</span>
+                <span>Only on Netflix</span>
+            </div>
+            <div class="col">
+                <span>Media Center</span>
+                <span>Terms of Use</span>
+                <span>Contact Us</span>
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="language">
+                <span class="bi bi-translate"></span>
+                <span>English</span>
+                <span class="bi bi-chevron-down"></span>
+            </div>
+            <div class="netflix">Netflix India</div>
+        </div>
+    </footer>
+</body>
+</html>
